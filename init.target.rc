@@ -158,7 +158,7 @@ on property:sys.ims.DATA_DAEMON_STATUS=1
     start ims_rtp_daemon
 
 service wcnss-service /system/bin/wcnss_service
-   class late_start
+   class main
    user system
    group system wifi
    oneshot
