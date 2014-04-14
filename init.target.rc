@@ -160,7 +160,7 @@ on property:sys.ims.DATA_DAEMON_STATUS=1
 service wcnss-service /system/bin/wcnss_service
    class main
    user system
-   group system wifi
+   group system wifi radio
    oneshot
 
 service ppd /system/bin/mm-pp-daemon
