@@ -62,6 +62,8 @@ on boot
     chown system system /sys/class/leds/green/blink
     # Enable writing to brightness node under torch-light from userspace
     chown system system /sys/class/leds/torch-light/brightness
+    # Enable Focaltech touch controller auto firmware update
+    write /sys/bus/i2c/drivers/ft5x06_ts/5-0038/update_fw 1
 
 #Start the qcom-system-daemon service
 service qcomsysd /system/bin/qcom-system-daemon
