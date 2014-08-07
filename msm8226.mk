@@ -1,10 +1,10 @@
-TARGET_USES_QCOM_BSP := false
+TARGET_USES_QCOM_BSP := true
 TARGET_USES_QCA_NFC := false
 
-#ifeq ($(TARGET_USES_QCOM_BSP), true)
+ifeq ($(TARGET_USES_QCOM_BSP), true)
 # Add QC Video Enhancements flag
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
-#endif #TARGET_USES_QCOM_BSP
+endif #TARGET_USES_QCOM_BSP
 
 DEVICE_PACKAGE_OVERLAYS := device/qcom/msm8226/overlay
 
