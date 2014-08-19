@@ -103,9 +103,13 @@ ifeq ($(NFC_D), true)
 endif
 
 endif # TARGET_USES_QCA_NFC
-#PRODUCT_BOOT_JARS += qcmediaplayer:WfdCommon:oem-services:qcom.fmradio:org.codeaurora.Performance:vcard
-PRODUCT_BOOT_JARS += qcom.fmradio
 
+PRODUCT_BOOT_JARS += qcmediaplayer \
+                     WfdCommon \
+                     oem-services \
+                     qcom.fmradio \
+                     org.codeaurora.Performance \
+                     vcard
 
 PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:system/etc/permissions/android.hardware.sensor.stepcounter.xml \
