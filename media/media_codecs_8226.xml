@@ -2,7 +2,7 @@
 <!-- Copyright (C) 2012-2013, The Linux Foundation. All rights reserved.
      Not a contribution.
 
-     Copyright (C) 2012 The Android Open Source Project
+     Copyright (C) 2014 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<CodecList>
+<MediaCodecs>
     <Encoders>
         <!-- Audio Hardware  -->
         <MediaCodec name="OMX.google.aac.encoder" type="audio/mp4a-latm" />
@@ -49,10 +49,6 @@
             <Quirk name="requires-allocate-on-output-ports" />
             <Quirk name="requires-loaded-to-idle-after-allocation" />
         </MediaCodec>
-        <!-- Video Software  -->
-        <MediaCodec name="OMX.google.h264.encoder" type="video/avc" />
-        <MediaCodec name="OMX.google.mpeg4.encoder" type="video/mp4v-es" />
-        <MediaCodec name="OMX.google.h263.encoder" type="video/3gpp" />
     </Encoders>
     <Decoders>
         <!-- Audio Hardware  -->
@@ -125,11 +121,6 @@
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
         </MediaCodec>
-        <!-- Video Software  -->
-        <MediaCodec name="OMX.google.h264.decoder" type="video/avc" />
-        <MediaCodec name="OMX.google.mpeg4.decoder" type="video/mp4v-es" />
-        <MediaCodec name="OMX.google.h263.decoder" type="video/3gpp" />
-        <MediaCodec name="OMX.google.vp8.decoder" type="video/x-vnd.on2.vp8" />
-        <MediaCodec name="OMX.google.vp9.decoder" type="video/x-vnd.on2.vp9" />
     </Decoders>
-</CodecList>
+    <Include href="media_codecs_google_video.xml" />
+</MediaCodecs>
