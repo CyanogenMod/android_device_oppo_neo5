@@ -109,7 +109,8 @@ PRODUCT_BOOT_JARS += qcmediaplayer \
                      oem-services \
                      qcom.fmradio \
                      org.codeaurora.Performance \
-                     vcard
+                     vcard \
+                     tcmiface
 
 PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:system/etc/permissions/android.hardware.sensor.stepcounter.xml \
