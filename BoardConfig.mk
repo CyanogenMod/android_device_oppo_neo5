@@ -97,3 +97,5 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm
 #Add support for firmare upgrade on 8226
 HAVE_FT_FW_UPGRADE := true
 HAVE_SYNAPTICS_I2C_RMI4_FW_UPGRADE := true
+
+TARGET_LDPRELOAD := libNimsWrap.so
