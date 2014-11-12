@@ -578,6 +578,10 @@
         <path name="incall-rec-uplink" />
     </path>
 
+    <path name="incall-rec-uplink afe-proxy">
+        <path name="incall-rec-uplink" />
+    </path>
+
     <path name="incall-rec-uplink-compress">
         <ctl name="MultiMedia8 Mixer VOC_REC_UL" value="1" />
     </path>
@@ -591,6 +595,10 @@
     </path>
 
     <path name="incall-rec-uplink-compress usb-headset-mic">
+        <path name="incall-rec-uplink-compress" />
+    </path>
+
+    <path name="incall-rec-uplink-compress afe-proxy">
         <path name="incall-rec-uplink-compress" />
     </path>
 
@@ -610,6 +618,10 @@
         <path name="incall-rec-downlink" />
     </path>
 
+    <path name="incall-rec-downlink afe-proxy">
+        <path name="incall-rec-downlink" />
+    </path>
+
     <path name="incall-rec-downlink-compress">
         <ctl name="MultiMedia8 Mixer VOC_REC_DL" value="1" />
     </path>
@@ -623,6 +635,10 @@
     </path>
 
     <path name="incall-rec-downlink-compress usb-headset-mic">
+        <path name="incall-rec-downlink-compress" />
+    </path>
+
+    <path name="incall-rec-downlink-compress afe-proxy">
         <path name="incall-rec-downlink-compress" />
     </path>
 
@@ -643,6 +659,10 @@
         <path name="incall-rec-uplink-and-downlink" />
    </path>
 
+   <path name="incall-rec-uplink-and-downlink afe-proxy">
+        <path name="incall-rec-uplink-and-downlink" />
+   </path>
+
    <path name="incall-rec-uplink-and-downlink-compress">
         <path name="incall-rec-uplink-compress" />
         <path name="incall-rec-downlink-compress" />
@@ -657,6 +677,10 @@
    </path>
 
    <path name="incall-rec-uplink-and-downlink-compress usb-headset-mic">
+        <path name="incall-rec-uplink-and-downlink-compress" />
+   </path>
+
+   <path name="incall-rec-uplink-and-downlink-compress afe-proxy">
         <path name="incall-rec-uplink-and-downlink-compress" />
    </path>
 
