@@ -128,4 +128,4 @@ use.voice.path.for.pcm.voip=true
 audio.offload.gapless.enabled=true
 
 #property to set minimum frequency as 787Mhz by default
-ro.min_freq_0=787000
+ro.min_freq_0=787200
