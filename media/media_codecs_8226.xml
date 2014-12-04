@@ -29,8 +29,6 @@
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
         </MediaCodec>
-        <!-- Audio Software  -->
-        <MediaCodec name="AACEncoder" type="audio/mp4a-latm" />
         <!-- Video Hardware  -->
         <MediaCodec name="OMX.qcom.video.encoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
@@ -63,8 +61,6 @@
         <MediaCodec name="OMX.qcom.audio.decoder.amrwbplus" type="audio/amr-wb-plus" >
         </MediaCodec>
         <!-- Audio Software  -->
-        <MediaCodec name="MP3Decoder" type="audio/mpeg" />
-        <MediaCodec name="AACDecoder" type="audio/mp4a-latm" />
         <MediaCodec name="OMX.qcom.audio.decoder.Qcelp13" type="audio/qcelp" >
             <Quirk name="requires-global-flush" />
         </MediaCodec>
