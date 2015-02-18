@@ -105,12 +105,15 @@ endif
 endif # TARGET_USES_QCA_NFC
 
 PRODUCT_BOOT_JARS += qcmediaplayer \
-                     WfdCommon \
-                     oem-services \
-                     qcom.fmradio \
                      org.codeaurora.Performance \
                      vcard \
                      tcmiface
+ifneq ($(strip $(QCPATH)),)
+PRODUCT_BOOT_JARS += WfdCommon
+PRODUCT_BOOT_JARS += qcom.fmradio
+PRODUCT_BOOT_JARS += oem-services
+endif
+
 
 PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:system/etc/permissions/android.hardware.sensor.stepcounter.xml \
