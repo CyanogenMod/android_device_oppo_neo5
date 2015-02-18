@@ -104,3 +104,5 @@ MALLOC_IMPL := dlmalloc
 
 #Disable memcpy_base.S optimization
 TARGET_CPU_MEMCPY_BASE_OPT_DISABLE := true
+
+USE_OPENGL_RENDERER := true
