@@ -27,16 +27,16 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
-TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
-TARGET_CPU_ABI  := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
+
+# Architecture
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
 
 TARGET_KERNEL_CONFIG := neo5_defconfig
 TARGET_KERNEL_SOURCE := kernel/oppo/r831l
-
 
 TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
