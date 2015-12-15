@@ -113,3 +113,5 @@ WPA_SUPPLICANT_VERSION           := VER_0_8_X
 #Disable memcpy_base.S optimization
 TARGET_CPU_MEMCPY_BASE_OPT_DISABLE := true
 
+
+-include vendor/oppo/neo5/BoardConfigVendor.mk
