@@ -1,0 +1,3 @@
+add_lunch_combo cm_neo5-user
+add_lunch_combo cm_neo5-userdebug
+add_lunch_combo cm_neo5-eng
