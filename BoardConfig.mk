@@ -1,6 +1,17 @@
-# config.mk
 #
-# Product-specific compile-time definitions.
+# Copyright (C) 2014 The CyanogenMod Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 #
 
 
@@ -13,10 +24,8 @@ USE_CAMERA_STUB := true
 -include $(QCPATH)/common/msm8226/BoardConfigVendor.mk
 
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
-TARGET_NO_BOOTLOADER := false
-TARGET_NO_KERNEL := false
+TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
-TARGET_NO_RPC := true
 
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
@@ -85,6 +94,9 @@ HAVE_FT_FW_UPGRADE := true
 HAVE_SYNAPTICS_I2C_RMI4_FW_UPGRADE := true
 
 TARGET_LDPRELOAD := libNimsWrap.so
+
+# RPC
+TARGET_NO_RPC := true
 
 #Use dlmalloc instead of jemalloc for mallocs
 MALLOC_IMPL := dlmalloc
