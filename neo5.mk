@@ -30,10 +30,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle
 
-# Bluetooth configuration files
-#PRODUCT_COPY_FILES += \
-    system/bluetooth/data/main.le.conf:system/etc/bluetooth/main.conf
-
 #fstab.qcom
 PRODUCT_PACKAGES += fstab.qcom
 #wlan driver
