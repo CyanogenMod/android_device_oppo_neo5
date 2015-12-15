@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+-include device/oppo/common/BoardConfigCommon.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := neo5,r831l
@@ -21,7 +22,7 @@ TARGET_OTA_ASSERT_DEVICE := neo5,r831l
 BOARD_USES_GENERIC_AUDIO := true
 USE_CAMERA_STUB := true
 
--include $(QCPATH)/common/msm8226/BoardConfigVendor.mk
+LOCAL_PATH := device/oppo/neo5
 
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_NO_BOOTLOADER := true
