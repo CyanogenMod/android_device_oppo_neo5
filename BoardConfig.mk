@@ -24,7 +24,6 @@ TARGET_CPU_ABI  := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
-ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_KERNEL_CONFIG := neo5_defconfig
 TARGET_KERNEL_SOURCE := kernel/oppo/r831l
