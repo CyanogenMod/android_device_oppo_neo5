@@ -85,8 +85,6 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm
 HAVE_FT_FW_UPGRADE := true
 HAVE_SYNAPTICS_I2C_RMI4_FW_UPGRADE := true
 
-TARGET_LDPRELOAD := libNimsWrap.so
-
 # RPC
 TARGET_NO_RPC := true
 
