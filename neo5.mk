@@ -26,6 +26,8 @@ TARGET_SCREEN_WIDTH := 480
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
