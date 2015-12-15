@@ -53,6 +53,10 @@ PRODUCT_PACKAGES += \
     memtrack.msm8226 \
     liboverlay
 
+# IPC router config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
+
 #fstab.qcom
 PRODUCT_PACKAGES += fstab.qcom
 
