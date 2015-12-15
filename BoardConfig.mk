@@ -12,10 +12,6 @@ USE_CAMERA_STUB := true
 
 -include $(QCPATH)/common/msm8226/BoardConfigVendor.mk
 
-#TODO: Fix-me: Setting TARGET_HAVE_HDMI_OUT to false
-# to get rid of compilation error.
-TARGET_HAVE_HDMI_OUT := false
-TARGET_USES_OVERLAY := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_NO_BOOTLOADER := false
 TARGET_NO_KERNEL := false
@@ -44,8 +40,6 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 
 # Enables Adreno RS driver
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
-
-#TARGET_BOOTIMG_SIGNED := true
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
