@@ -10,11 +10,6 @@ TARGET_OTA_ASSERT_DEVICE := neo5,r831l
 BOARD_USES_GENERIC_AUDIO := true
 USE_CAMERA_STUB := true
 
-TARGET_USES_AOSP := false
-# Compile with msm kernel
-TARGET_COMPILE_WITH_MSM_KERNEL := true
-TARGET_HAS_QC_KERNEL_SOURCE := true
-
 -include $(QCPATH)/common/msm8226/BoardConfigVendor.mk
 
 #TODO: Fix-me: Setting TARGET_HAVE_HDMI_OUT to false
