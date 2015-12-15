@@ -26,9 +26,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
 PRODUCT_PACKAGES += \
+    audiod \
+    audio.a2dp.default \
+    audio_policy.msm8226 \
+    audio.primary.msm8226 \
+    audio.r_submix.default \
+    audio.usb.default \
+    libqcompostprocbundle \
     libqcomvisualizer \
+    libqcompostprocbundle \
     libqcomvoiceprocessing \
-    libqcompostprocbundle
+    tinymix
 
 #fstab.qcom
 PRODUCT_PACKAGES += fstab.qcom
