@@ -52,6 +52,9 @@ PRODUCT_PACKAGES += \
     libantradio \
     antradio_app
 
+# System properties
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    camera2.portability.force_api=1
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -77,8 +80,5 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    camera2.portability.force_api=1
-	
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oppo/neo5/neo5-vendor.mk)
