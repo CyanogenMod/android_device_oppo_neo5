@@ -3,9 +3,6 @@
 # Product-specific compile-time definitions.
 #
 
-ifeq ($(TARGET_ARCH),)
-TARGET_ARCH := arm
-endif
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := neo5,r831l
@@ -38,6 +35,10 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
+
+TARGET_KERNEL_CONFIG := neo5_defconfig
+TARGET_KERNEL_SOURCE := kernel/oppo/r831l
+
 
 TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
