@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
 
 #fstab.qcom
 PRODUCT_PACKAGES += fstab.qcom
+
 #wlan driver
 PRODUCT_COPY_FILES += \
     device/qcom/msm8226/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
@@ -41,8 +42,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant_overlay.conf \
     p2p_supplicant_overlay.conf
 
-PRODUCT_PACKAGES += wcnss_service \
-		    pronto_wlan.ko
+PRODUCT_PACKAGES += \
+    wcnss_service \
+    pronto_wlan.ko
 
 #ANT stack
 PRODUCT_PACKAGES += \
@@ -57,3 +59,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
+	
+# Call the proprietary setup
+$(call inherit-product-if-exists, vendor/oppo/neo5/neo5-vendor.mk)
