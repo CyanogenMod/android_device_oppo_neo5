@@ -38,6 +38,14 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
+# Graphics
+PRODUCT_PACKAGES += \
+    copybit.msm8226 \
+    gralloc.msm8226 \
+    hwcomposer.msm8226 \
+    memtrack.msm8226 \
+    liboverlay
+
 #fstab.qcom
 PRODUCT_PACKAGES += fstab.qcom
 
