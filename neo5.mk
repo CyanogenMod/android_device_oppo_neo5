@@ -28,6 +28,12 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService \
+    antradio_app \
+    libantradio
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
@@ -83,12 +89,6 @@ PRODUCT_PACKAGES += \
     wcnss_service \
     pronto_wlan.ko
 
-#ANT stack
-PRODUCT_PACKAGES += \
-    AntHalService \
-    libantradio \
-    antradio_app
-
 # System properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
@@ -103,6 +103,7 @@ PRODUCT_COPY_FILES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
+    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
