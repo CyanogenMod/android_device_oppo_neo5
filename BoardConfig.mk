@@ -49,6 +49,9 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 TARGET_KERNEL_CONFIG := neo5_defconfig
 TARGET_KERNEL_SOURCE := kernel/oppo/neo5
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # Graphics
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
@@ -112,6 +115,5 @@ WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
 #Disable memcpy_base.S optimization
 TARGET_CPU_MEMCPY_BASE_OPT_DISABLE := true
-
 
 -include vendor/oppo/neo5/BoardConfigVendor.mk
