@@ -146,6 +146,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=9 \
     ro.use_data_netmgrd=true \
     persist.data.netmgrd.qos.enable=true \
+    telephony.lteOnGsmDevice=1 \
     ro.telephony.default_network=9
 
 # Call the proprietary setup
