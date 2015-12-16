@@ -128,5 +128,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine-8226.conf
 
+# USB
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.isUsbOtgEnabled=true \
+    persist.sys.usb.config=mtp
+
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oppo/neo5/neo5-vendor.mk)
