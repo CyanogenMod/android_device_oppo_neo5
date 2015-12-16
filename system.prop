@@ -66,20 +66,6 @@ mm.enable.vsync.render=1
 # VIDC: debug_levels
 # 1:ERROR 2:HIGH 4:LOW 0:NOlogs 7:AllLogs
 vidc.debug.level=1
-#
-# system props for the data modules
-#
-ro.use_data_netmgrd=true
-persist.data.netmgrd.qos.enable=true
-
-#system props for time-services
-persist.timed.enable=true
-
-#
-# system prop for opengles version
-#
-# 196608 is decimal for 0x30000 to report version 3
-ro.opengles.version=196608
 
 #
 # System props for telephony

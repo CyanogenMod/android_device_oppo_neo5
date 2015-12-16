@@ -51,6 +51,11 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    mm.enable.qcom_parser=37491 \
+    ro.qc.sdk.audio.fluencetype=fluence \
+    tunnel.audio.encode=true
+
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8226 \
@@ -132,6 +137,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.isUsbOtgEnabled=true \
     persist.sys.usb.config=mtp
+
+# System properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.hwc.mdpcomp.enable=true \
+    persist.timed.enable=true \
+    ro.opengles.version=196608 \
+    ro.telephony.default_network=9 \
+    ro.use_data_netmgrd=true \
+    persist.data.netmgrd.qos.enable=true \
+    ro.telephony.default_network=9
 
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oppo/neo5/neo5-vendor.mk)
