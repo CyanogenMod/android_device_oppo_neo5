@@ -1,0 +1,2 @@
+# Camera
+bin/mm-qcamera-daemon
