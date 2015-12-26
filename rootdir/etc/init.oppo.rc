@@ -1,0 +1,44 @@
+#
+# File: - init.oppo.rc
+#
+on boot
+	mkdir /data/opponvitems  0771 radio radio
+
+service logcat_strict /system/bin/logcat  -f /cache/admin/apps/android.txt -r 2048 -n 10 -v time *:D
+    user root
+    disabled
+    oneshot  
+
+service logcat_loose /system/bin/logcat  -f /cache/admin/apps/android.txt -r 10240 -n 20  -v time *:V
+    user root
+    disabled
+    oneshot 
+    
+service logcat_radio /system/bin/logcat -b radio -f /cache/admin/apps/radio.txt -r 8192 -n 10  -v time *:V
+    user root
+    disabled
+    oneshot
+
+service logcat_event /system/bin/logcat -b events -f /cache/admin/apps/events.txt -r 4096 -n 10  -v threadtime *:V
+    user root
+    disabled
+    oneshot
+
+service grab_logcat /system/bin/logcat  -f /data/GrabLog/saveAll/android.txt -v threadtime *:D
+    user root
+    disabled
+    oneshot
+
+service grab_radio /system/bin/logcat -b radio -f /data/GrabLog/saveAll/radio.txt -v threadtime *:V
+    user root
+    disabled
+    oneshot	
+service grab_klogd /system/xbin/klogd -f /data/GrabLog/saveAll/kinfo.txt
+    user root
+    disabled
+    oneshot
+    
+service  grab_netlog    /system/xbin/tcpdump   -i any -p -s 0 -w /cache/admin/netlog/tcpdump.pcap
+    user root
+    disabled
+    oneshot
