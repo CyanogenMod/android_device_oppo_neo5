@@ -19,7 +19,6 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := neo5,r831l
 
-BOARD_USES_GENERIC_AUDIO := true
 USE_CAMERA_STUB := true
 
 LOCAL_PATH := device/oppo/neo5
