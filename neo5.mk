@@ -32,6 +32,13 @@ PRODUCT_PACKAGES += \
     antradio_app \
     libantradio
 
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:root/fstab.qcom \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.usb.rc:init.qcom.usb.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.target.rc:init.target.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.rc:init.qcom.rc \
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
@@ -67,9 +74,6 @@ PRODUCT_PACKAGES += \
 # IPC router config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
-
-#fstab.qcom
-PRODUCT_PACKAGES += fstab.qcom
 
 #wlan driver
 PRODUCT_COPY_FILES += \
