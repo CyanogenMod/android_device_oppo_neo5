@@ -88,10 +88,6 @@ PROTOBUF_SUPPORTED := true
 TARGET_USES_ION := true
 TARGET_USE_KINGFISHER_OPTIMIZATION := true
 
-#Add support for firmare upgrade on 8226
-HAVE_FT_FW_UPGRADE := true
-HAVE_SYNAPTICS_I2C_RMI4_FW_UPGRADE := true
-
 # RPC
 TARGET_NO_RPC := true
 
