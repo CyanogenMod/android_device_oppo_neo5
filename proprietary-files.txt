@@ -1,2 +1,60 @@
 # Camera
 bin/mm-qcamera-daemon
+lib/hw/camera.msm8226.so
+vendor/lib/libmmcamera_hi258.so
+vendor/lib/libmmcamera_hi256.so
+vendor/lib/libmmcamera_hi258_14013.so
+vendor/lib/liboemcamera.so
+vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_stats_algorithm.so
+vendor/lib/libmmcamera2_iface_modules.so
+vendor/lib/libmmcamera2_isp_modules.so
+vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmcamera2_cpp_module.so
+vendor/lib/libmmcamera2_c2d_module.so
+vendor/lib/libmmcamera2_imglib_modules.so
+vendor/lib/libmmcamera2_wnr_module.so
+vendor/lib/libmmcamera2_vpe_module.so
+
+# libchromematix
+vendor/lib/libchromatix_ov5648_back_common.so
+vendor/lib/libchromatix_ov5648_liveshot.so
+vendor/lib/libchromatix_ov5648_back_default_video.so
+vendor/lib/libchromatix_ov5648_liveshot_truly.so
+vendor/lib/libchromatix_ov5648_back_hdr_shot.so
+vendor/lib/libchromatix_ov5648_preview.so
+vendor/lib/libchromatix_ov5648_back_liveshot.so
+vendor/lib/libchromatix_ov5648_preview_truly.so
+vendor/lib/libchromatix_ov5648_back_preview.so
+vendor/lib/libchromatix_ov5648_vga.so
+vendor/lib/libchromatix_ov5648_back_zsl.so
+vendor/lib/libchromatix_ov5648_vga_truly.so
+vendor/lib/libchromatix_ov5648_common.so
+vendor/lib/libchromatix_ov5648_default_video.so
+vendor/lib/libchromatix_ov5648_zsl.so
+vendor/lib/libchromatix_ov5648_zsl_truly.so
+vendor/lib/libchromatix_ov5648_default_video_truly.so
+
+# Time services
+app/TimeService.apk
+bin/time_daemon
+vendor/lib/libtime_genoff.so
+vendor/lib/libTimeService.so
+
+# RIL
+bin/netmgrd
+bin/rmt_storage
+
+# Venus (media) firmware
+etc/firmware/venus.b00
+etc/firmware/venus.b01
+etc/firmware/venus.b02
+etc/firmware/venus.b03
+etc/firmware/venus.b04
+etc/firmware/venus.mbn
+etc/firmware/venus.mdt
+
+# Audio
+vendor/lib/libacdbmapper.so
+vendor/lib/libacdbloader.so
