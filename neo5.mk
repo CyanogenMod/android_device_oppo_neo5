@@ -62,6 +62,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.fluencetype=fluence \
     tunnel.audio.encode=true
 
+# GPS
+PRODUCT_PACKAGES += \
+    gps.msm8226
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps/izat.conf:system/etc/izat.conf \
+    $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/configs/gps/quipc.conf:system/etc/quipc.conf \
+    $(LOCAL_PATH)/configs/gps/sap.conf:system/etc/sap.conf
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8226 \
