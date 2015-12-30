@@ -71,6 +71,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/gps/quipc.conf:system/etc/quipc.conf \
     $(LOCAL_PATH)/configs/gps/sap.conf:system/etc/sap.conf
+
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8226 \
@@ -83,7 +84,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
-#wlan driver
+# WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
@@ -93,9 +94,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/configs/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl
 
+# WiFi
 PRODUCT_PACKAGES += \
-    wpa_supplicant_overlay.conf \
     p2p_supplicant_overlay.conf \
+    wpa_supplicant_overlay.conf \
     hostapd_default.conf \
     hostapd.accept \
     hostapd.deny
@@ -104,9 +106,6 @@ PRODUCT_PACKAGES += \
     wcnss_service \
     pronto_wlan.ko
 
-# System properties
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    camera2.portability.force_api=1
 
 # Media profile
 PRODUCT_COPY_FILES += \
@@ -115,6 +114,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
     $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
+
+# Camera
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    camera2.portability.force_api=1
 
 # Permissions
 PRODUCT_COPY_FILES += \
