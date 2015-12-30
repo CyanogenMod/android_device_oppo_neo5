@@ -106,6 +106,9 @@ PRODUCT_PACKAGES += \
     wcnss_service \
     pronto_wlan.ko
 
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.qualcomm.bt.hci_transport=smd
 
 # Media profile
 PRODUCT_COPY_FILES += \
