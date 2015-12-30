@@ -153,16 +153,20 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.isUsbOtgEnabled=true \
     persist.sys.usb.config=mtp
 
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+    rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
+    ro.use_data_netmgrd=true \
+    ro.telephony.default_network=9 \
+    persist.data.netmgrd.qos.enable=true \
+    telephony.lteOnGsmDevice=1
+
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true \
     persist.timed.enable=true \
     ro.opengles.version=196608 \
-    ro.telephony.default_network=9 \
-    ro.use_data_netmgrd=true \
-    persist.data.netmgrd.qos.enable=true \
-    telephony.lteOnGsmDevice=1 \
-    ro.telephony.default_network=9
+    ro.sf.lcd_density=240
 
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oppo/neo5/neo5-vendor.mk)
